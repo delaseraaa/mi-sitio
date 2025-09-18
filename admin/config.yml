@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: delaseraaa/mi-sitio
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "paginas"
+    label: "Páginas"
+    files:
+      - label: "Página principal"
+        name: "index"
+        file: "index.html"
+        fields:
+          - { label: "Contenido", name: "body", widget: "markdown" }
